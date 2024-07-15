@@ -1,0 +1,61 @@
+/* Home.css */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajustar el ancho al 100% para ocupar todo el espacio disponible */
+  max-width: 100%; /* Ajustar el ancho máximo para asegurar responsividad */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1rem; /* Reducir el tamaño del título para que quepa mejor */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .col-3 {
+    flex: 0 0 25%; /* Cambiar el ancho de cada columna a 25% en dispositivos medianos y grandes */
+    max-width: 25%; /* Asegurar que el máximo ancho sea 25% */
+  }
+
+  .row {
+    display: flex; /* Hacer que las filas sean flexibles */
+    flex-wrap: wrap; /* Envolver las tarjetas cuando no caben en una sola línea */
+    justify-content: space-between; /* Distribuir las tarjetas uniformemente en la fila */
+  }
+}
+
+.video-container {
+  max-width: 100%; /* Ajusta el ancho máximo del contenedor del video */
+}
+
+.video-container video {
+  width: 900px; /* Ajusta el ancho del video al 100% del contenedor */
+  height: auto; /* Ajuste automático de la altura según el ancho */
+}
